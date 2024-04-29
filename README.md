@@ -1,8 +1,7 @@
-# Deploying Web Server in Screened Subnet with Azure
+# Secure Deployment of Nextcloud Web Server in Azure Cloud Environment
 
 ## SUMMARY
-In this project a Nextcloud web server is deployed in a screened subnet using Azure cloud. Project started by creating a virtual network followed by a subnet. Subnet is protected by inbound and outbound rules by using Network Security Groups. An ubuntu server is deployed in a VM within the subnet. For remote administration of the server, Bastion service is used. Bastion allows connection to the VM using SSH without exposing an external port to the internet. Lastly, created a public IP and a DNS Label to access the web server through the public internet. This report also lists top five risks present in the network and remediations for each risk.
-
+Deployed a Nextcloud web server within an Azure cloud environment, hosted in a screened subnet for enhanced security. The project commenced with the creation of a virtual network and a subnet, both protected by inbound and outbound rules using Network Security Groups. An Ubuntu server was then deployed within the subnet, with remote administration facilitated through the implementation of a Bastion service. Utilizing Bastion allowed secure SSH connections to the VM without exposing external ports to the internet. Furthermore, a public IP and DNS label were configured to enable access to the web server from the public internet. Additionally, the project included a risk assessment, identifying the top five risks in the network along with corresponding remediation strategies.
 ### The list of steps taken are given below:
  - Created a Resource Group
  - Created a Virtual Network and a subnet

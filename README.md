@@ -12,6 +12,9 @@ Deployed a Nextcloud web server within an Azure cloud environment, hosted in a s
  - Published an IP
  - Created a DNS label
 
+### Network Diagram
+<img src="https://github.com/ibtesam5d/nextcloud/blob/main/Network%20Diagram.png"/>
+
 ## RISKS and REMEDIATIONS
 - Web servers in a screened subnet possesses high risk. Vulnerabilities can allow a threat actor to compromise the server and move into the internal network. After installation of the server, a vulnerability scan must be performed to find any existing vulnerabilities and implement controls accordingly.
 - A self signed certificate is used here for a public facing web frontend. This will cause browser certificate error as the user's browser will not recognize our certificates. This will disrupt business operations and can cause significant financial and reputational damage. A commercially available certificate by trusted CA should be implemented.
